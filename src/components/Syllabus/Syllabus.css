@@ -1,0 +1,15 @@
+.bordered-table {
+          border-collapse: collapse;
+          width: 100%;
+          justify-content: end;
+          background-color: #fff;
+          color: #000;
+}
+
+.bordered-table th,
+.bordered-table td {
+          border: 1px solid #000;
+          /* You can adjust the border style as needed */
+          padding: 7px 20px;
+          /* Add padding to make it look better */
+}

@@ -1,0 +1,25 @@
+.exam-topics {
+          font-size: 10px;
+          align-items: center;
+          padding: 50px;
+}
+
+.exam-topics h1 {
+          font-size: 27px;
+          text-align: center;
+}
+
+.exam-topics p {
+          font-size: 16px;
+          text-align: center;
+}
+
+.exam-topics ul li {
+          list-style-type: none;
+          font-size: 16px;
+          margin-bottom: 12px;
+          padding: 5px;
+          background-color: #000;
+          color: white;
+          cursor: pointer;
+}

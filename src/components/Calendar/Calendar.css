@@ -1,0 +1,43 @@
+/* CSS for the calendar component */
+.calendar-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          background-color: blue;
+}
+
+/* CSS for the paper calendar design */
+.paper-calendar {
+          display: inline-block;
+          background-color: #fff;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          text-align: center;
+          width: 100%;
+}
+
+.calendar-header {
+          /* Red color for the top */
+
+          font-size: 10px;
+}
+
+.date-line {
+          height: 29px;
+          display: flex;
+          flex-direction: column;
+          font-size: 10px;
+          position: fixed;
+          bottom: 20px;
+          width: 100%;
+          background-color: white;
+}
+
+.date,
+.day-of-week {
+          background-color: #2979bf
+}
+
+.day-of-week {
+          font-size: 10px;
+}

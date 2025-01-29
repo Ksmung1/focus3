@@ -1,0 +1,28 @@
+/* ExamTable.css */
+
+.exam-table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+  background-color: #fff;
+  border: 1px solid;
+}
+
+.exam-table th {
+  color: black;
+  border: 1px solid black;
+  padding: 10px 5px;
+}
+
+.exam-table td {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 10px 5px;
+}
+
+.link-style {
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  padding: 2px 1px;
+}

@@ -1,0 +1,183 @@
+.homepage-shortcut {
+          flex-direction: row;
+          padding: 10px;
+          width: 100%;
+          overflow: hidden;
+}
+
+
+.daily-quotes {
+          margin: 2px;
+          background-color: rgba(255, 255, 255, 0.5);
+          /* Adjust the RGB and opacity values as needed */
+          backdrop-filter: blur(20px);
+          /* Adds a blur effect to the background */
+          border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.daily-quotes h1 {
+          color: black;
+          text-align: center;
+          justify-content: center;
+          background-color: transparent;
+          /* Adjust the RGB and opacity values as needed */
+          backdrop-filter: blur(10px);
+          /* Adds a blur effect to the background */
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          ;
+          margin: 0;
+          padding: 0;
+          border-bottom: 1px solid black;
+}
+
+.calender .time {
+          position: fixed;
+          bottom: 0;
+          width: 100%;
+}
+
+.calender .date {
+          bottom: 20px;
+          width: 100%;
+
+}
+
+.daily-quotes p {
+          margin: 0;
+          color: black;
+          text-align: center;
+          background-color: transparent;
+          /* Adjust the RGB and opacity values as needed */
+          backdrop-filter: blur(10px);
+          /* Adds a blur effect to the background */
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          padding: 2px;
+
+}
+
+.homepage-shortcuts {
+          margin: 0 70px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+          background-color: transparent;
+}
+
+Link {
+          text-decoration: none;
+}
+
+.card a {
+          flex: flex;
+          text-align: center;
+}
+
+
+
+
+
+
+
+.homepage-shortcuts .card {
+          flex-direction: row;
+          font-size: 9px;
+          border-radius: 10px;
+          position: relative;
+          color: #000;
+          position: relative;
+          opacity: 1;
+          text-align: center;
+          /* padding: 3px 1px; */
+}
+
+.card-content {
+          background-color: white;
+          text-align: center;
+          font-size: 14px;
+          font-size: 10px;
+          color: black;
+          border-radius: 10px;
+          padding: 2px;
+          font-size: 14px;
+
+}
+
+
+
+.card:hover {
+          opacity: .9;
+
+}
+
+
+.homepage-shortcuts img {
+          padding: 0;
+          margin: 0;
+          min-width: 40px;
+          max-width: 40px;
+          max-height: 40px;
+          min-height: 40px;
+          display: flex;
+          position: relative;
+}
+
+.popup {
+          z-index: 9;
+          position: absolute;
+          background-color: #000;
+          top: -10px;
+          left: 150px;
+          padding: 5px 5px 5px 20px;
+          font-size: 12px;
+          border: 1px solid gray;
+          border-radius: 4px;
+          text-align: left;
+}
+
+.News li {
+          list-style-type: none;
+}
+
+.News li::before {
+          content: '📰';
+}
+
+.NCERT li {
+          list-style-type: none;
+}
+
+.NCERT li::before {
+          content: '\2605';
+          color: rgb(82, 82, 255);
+}
+
+.cards-container {
+          margin-top: 50px;
+          border-radius: 10px;
+          border: 1px solid black;
+          justify-content: left;
+          display: flex;
+          overflow-x: scroll;
+          text-align: left;
+          scroll-snap-type: x mandatory;
+          -webkit-overflow-scrolling: touch;
+}
+
+.card-wrappers {
+          justify-content: left;
+          align-items: flex-start;
+          background-color: #fff;
+          flex: 0 0 auto;
+          width: 100%;
+          /* Set the width of each card here */
+          scroll-snap-align: start;
+}
+
+.card-wrappers .card-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: left;
+}

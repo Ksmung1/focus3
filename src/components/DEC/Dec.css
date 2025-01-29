@@ -1,0 +1,80 @@
+.dec-div {
+          position: relative;
+          margin: 20px;
+
+}
+
+.dec-div ul {
+          /* Center the element horizontally */
+          display: flex;
+          flex-direction: row;
+          color: black;
+          margin: 0 0;
+          padding: 0 23px;
+          justify-content: space-between;
+}
+
+
+.dec-div ul li {
+          list-style-type: none;
+          padding: 7px;
+          text-align: center;
+          width: 60px;
+          font-weight: 700;
+          cursor: pointer;
+
+}
+
+.dec-div ul button {
+          cursor: pointer;
+          padding: 5px;
+          width: 70px;
+          margin: 0 7px;
+          text-align: center;
+          border: 1px solid;
+
+}
+
+li.active {
+          background-color: #000;
+          color: white;
+}
+
+.dec-content {
+          margin: 20px 0;
+}
+
+.dec-content div {
+          padding: 10px;
+          color: #000;
+}
+
+.dec-content div div {
+          margin: 0;
+}
+
+.dec-titles ul {
+          display: grid;
+          padding: 0;
+          gap: 10px;
+          margin: 0 20px;
+          grid-template-columns: repeat(2, 1fr);
+
+}
+
+.dec-titles ul li {
+          background-color: #fff;
+          padding: 4px 10px;
+          font-size: 12px;
+          font-weight: 700;
+          list-style-type: none;
+          text-align: left;
+
+}
+
+
+
+.topic-para {
+          background-color: #fff;
+          margin: 0 20px;
+}

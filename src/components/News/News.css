@@ -1,0 +1,22 @@
+.news-card {
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          color: black;
+          min-height: 100px;
+          text-align: center;
+}
+
+.editorial h1 {
+          font-size: 25px;
+          text-align: center;
+          color: black;
+          font-weight: 800;
+}
+
+.editorial-items {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 30px;
+}

@@ -1,0 +1,138 @@
+.Booters {
+          margin: 20px;
+          display: none;
+}
+
+.card a {
+          font-size: 8px;
+}
+
+.Booters h6 {
+          font-size: 16px;
+}
+
+.subscription {
+          position: relative;
+          padding: 10px 10px 4px;
+          border-radius: 20px;
+          border: 1px solid #000;
+          background: linear-gradient(45deg, transparent, rgba(0, 255, 21, 0.087), transparent);
+}
+
+.subscription h6 {
+          font-size: 13px;
+          margin: 15px 10px 0;
+          color: var(--dark);
+}
+
+.subscription p {
+          font-size: 9px;
+          color: black;
+          margin: 5px 10px;
+}
+
+img {
+          width: 100%;
+}
+
+.subscription ul {
+          padding: 0 10px;
+}
+
+.subscription ul li {
+          font-size: 9px;
+          color: black;
+          margin: 5px 0;
+          list-style-type: none;
+          content: '✅';
+          text-align: left;
+}
+
+.subscription ul li::before {
+          content: '✅';
+          margin-right: 5px;
+}
+
+.subscription button {
+          position: absolute;
+          top: 120px;
+          right: 20px;
+          padding: 5px;
+          background-color: red;
+          border: none;
+          color: var(--light);
+          border-radius: 15px;
+          cursor: pointer;
+}
+
+.subscription .row {
+          /* Set the parent container to use flexbox */
+          display: flex;
+          flex-wrap: wrap;
+          /* Wrap the columns to the next line when necessary */
+          justify-content: space-between;
+          align-items: center;
+          margin: 0;
+          padding: 0 40px;
+}
+
+.subscription .row .col {
+          margin-top: 0;
+
+          text-align: center;
+          border-radius: 10px;
+
+}
+
+.subscription .row .col h6 {
+          font-size: 12px;
+}
+
+
+.subscription .items {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          padding-left: 8px;
+          justify-content: center;
+          color: white;
+          gap: 10px;
+          padding-top: 4px;
+          position: relative;
+}
+
+
+.subscription .items div.card {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          justify-content: center;
+          display: flex;
+          text-align: center;
+          position: relative;
+          align-items: center;
+}
+
+#closeArticle {
+          position: fixed;
+          z-index: 2000;
+          bottom: 0px;
+          right: 50px;
+          color: #000;
+          background-color: rgb(37, 255, 37);
+          border: none;
+          border-radius: 5px;
+          width: 50px;
+}
+
+.subscription .items .card p {
+          color: #000;
+          font-size: 7px;
+          text-align: center;
+          cursor: pointer;
+}
+
+.subscription a {
+          text-decoration: none;
+          color: #fff;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,36 @@
+.EXAM-details {
+          padding: 20px;
+}
+
+.EXAM-details h1 {
+          font-size: 20px;
+          text-align: center;
+}
+
+.exam-info-table {
+          width: 100%;
+          border-collapse: collapse;
+}
+
+.exam-info-table td {
+          border: 1px solid #ccc;
+          padding: 10px;
+}
+
+.exam-info-table td strong {
+          font-weight: bold;
+}
+
+.EXAM-details img {
+          width: 100%;
+          margin-bottom: 20px;
+}
+
+.DefenceExams ul {
+          padding-left: 20px;
+}
+
+.exam-info-table {
+          background-color: #fff;
+          color: #000;
+}

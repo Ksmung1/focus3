@@ -1,0 +1,67 @@
+.focusTable {
+  width: 100%;
+  overflow-x: scroll;
+  font-size: 14px;
+  color: #000;
+}
+
+.focusTable-table {
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+  overflow: scroll;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table-cell {
+  color: #000;
+  background-color: #fff;
+  min-width: 200px;
+  padding: 5px;
+  border: 1px solid #323232;
+  /* Add a border to the header cells */
+  font-size: 13px;
+}
+
+.in-progress {
+  display: inline;
+  background-color: lightgreen;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.upcoming {
+  display: inline;
+  background-color: lightgrey;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.upcoming::before {
+  content: "●";
+  color: black;
+  font-size: 19px;
+}
+
+.in-progress::before {
+  content: "●";
+  color: green;
+  font-size: 19px;
+}
+
+.start-soon {
+  display: inline;
+  background-color: lightblue;
+  padding: 5px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.start-soon::before {
+  content: "●";
+  color: #fe5a1d;
+  font-size: 19px;
+}

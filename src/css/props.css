@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+.fixed {
+  position: fixed;
+}
+.mid {
+  align-items: center;
+  text-align: center;
+}
+.gap {
+  gap: 10px;
+}
+.flex {
+  display: flex;
+}
+.black {
+  color: black;
+}
+.col {
+  flex-direction: column;
+}
+.row {
+  flex-direction: row;
+}
+.courier-prime {
+  font-family: "Courier Prime", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.comic-sans {
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
+}
+.indie-flower {
+  font-family: "Indie Flower", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.head-font {
+  fontsize: 40px;
+  fontweight: 800;
+  margintop: 10px;
+  marginbottom: 0;
+  color: #fe5a1d;
+}
+.futuristic-text {
+  font-family: "Courier Prime", serif;
+  color: #0ff;
+  font-size: 20px;
+}
+.lspace {
+  letter-spacing: 3px;
+}

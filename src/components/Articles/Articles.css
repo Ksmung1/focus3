@@ -1,0 +1,129 @@
+.articles {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+}
+
+.articles-card-viewer {
+          border: 2px solid blue;
+          padding: 10px;
+          border-radius: 10px;
+          font-size: 14px;
+          font-family: sans-serif;
+          margin: 50px 10px;
+          background-color: #f5f4f4;
+}
+
+.articles-card-viewer h3 {
+          background-color: #fff;
+          color: black;
+}
+
+.articles-card-viewer p {
+          background-color: #fff;
+          color: #000;
+}
+
+
+.articles-card-viewer strong {
+          background-color: #fff;
+          color: black;
+}
+
+.articles-card-viewer img {
+          border: 1px solid green;
+}
+
+.articles-card-viewer h1 {
+          margin-bottom: 10px;
+          text-align: center;
+          background-color: #fff;
+}
+
+.Articles h1 {
+          text-align: center;
+          font-size: 20px;
+          margin-bottom: 30px;
+          padding: 10px;
+          margin-top: 40px;
+
+}
+
+.ArticlesCards {
+          display: flex;
+          margin: 0 20px;
+          gap: 10px;
+          position: relative;
+          border: 2px solid rgba(97, 184, 255, 0.774);
+          border-radius: 7px;
+          cursor: pointer;
+          padding: 10px;
+          background-color: #feffffe6;
+}
+
+.ArticlesCards .img-container {
+          width: 100px;
+          overflow: hidden;
+          height: 43px;
+          margin: auto 10px auto 0;
+          background-color: #c1f0fb;
+          border-radius: 10px;
+          position: relative;
+          border: 1px solid black;
+}
+
+.ArticlesCards .img-container img {
+          background-color: #fff;
+          padding: 0;
+          width: 100%;
+          margin: auto;
+          border: 1px solid black;
+}
+
+.ArticlesCards h2 {
+          text-align: left;
+          background-color: transparent;
+          color: black;
+}
+
+.article-details {
+          color: black;
+          background-color: transparent;
+
+}
+
+.articles-card-viewer h3 {
+          font-size: 19px;
+}
+
+.moreArticles {
+          text-decoration: underline;
+          margin: 100px;
+          display: flex;
+          flex-direction: column;
+}
+
+.moreArticles img {
+          width: 100%;
+          max-width: 150px;
+          padding: 0 5px;
+          border-right: 0.01em solid black;
+}
+
+.morebutton {
+          margin-top: 30px;
+          border: 1px solid black;
+          background-color: #fff;
+          color: #000;
+          padding: 7px;
+          border-radius: 5px;
+          font-size: 15px;
+          transition: 200ms;
+}
+
+.morebutton:hover {
+          background-color: #000;
+          color: #fff;
+          cursor: pointer;
+          border: 1px solid white;
+}

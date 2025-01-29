@@ -1,0 +1,64 @@
+.calendar-container {
+  text-align: center;
+  margin: 50px 20px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-display {
+  background-color: #333;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+/* Make the month name (January, February, etc.) permanently white */
+.react-calendar__navigation button {
+  color: white;
+  background: #222;
+  font-weight: bold;
+}
+.react-calendar__navigation button:hover {
+  color: white;
+  background: black !important;
+  font-weight: bold;
+}
+.react-calendar__navigation button:focus,
+.react-calendar__navigation button:active {
+  background: none !important;
+  color: white !important;
+  outline: none !important; /* Remove focus outline */
+  box-shadow: none !important; /* Remove any shadow effects */
+}
+
+.react-calendar {
+  border: 1px solid white;
+  background: #000;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  color: white;
+}
+
+.dot {
+  color: lightgreen;
+  font-size: 20px;
+}
+.react-calendar__tile:enabled:hover {
+  background: white;
+  color: black;
+}
+.react-calendar__tile:enabled:focus {
+  background: blue !important; /* Remove background change on hover */
+  color: inherit !important; /* Keep the default text color */
+  cursor: default !important; /* Remove pointer cursor */
+}
+.react-calendar__tile--now {
+  background: yellow !important; /* Set your desired background color */
+  color: black !important; /* Set text color */
+  font-weight: bold; /* Make it stand out */
+}

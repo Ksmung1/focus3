@@ -1,0 +1,33 @@
+.scroll-container-adv {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 10px;
+  margin: 10px 0px 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll-content-adv {
+  width: 100%;
+  display: block;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.scroll-content-adv:hover {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.scroll-card-adv {
+  margin: 0 10px;
+}
+
+.scroll-card-adv img {
+  width: 100%;
+  border-radius: 10px;
+}

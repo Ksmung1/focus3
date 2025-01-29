@@ -1,0 +1,86 @@
+.about {
+          color: #000;
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          border: 1px solid black;
+          padding: 0px;
+}
+
+#About h1,
+#About h2,
+#About h3 {
+          color: #000;
+}
+
+#About h1 {
+          font-size: 26px;
+          text-align: center;
+          font-weight: 900;
+          padding: 0px 0;
+}
+
+
+
+#About h2 {
+          font-size: 20px;
+          margin: 20px 0;
+}
+
+#About h3 {
+          font-size: 16px;
+          margin: 10px 0;
+}
+
+#About ul {
+          list-style-type: none;
+          padding: 0;
+}
+
+#Aboutul li {
+          margin: 5px 0;
+}
+
+#About ul li a {
+          text-decoration: none;
+          color: #0487ce;
+}
+
+#About ul li a:hover {
+          text-decoration: underline;
+}
+
+/* Style for clickable links */
+
+
+#About ul li a:active {
+          color: #ff0000b6;
+}
+
+/* Style for ordered lists within the content */
+#About ol {
+          margin-left: 20px;
+}
+
+/* Style for list items within ordered lists */
+#About ol li {
+          margin: 5px 0;
+}
+
+/* Style for paragraphs */
+#About p {
+          margin: 10px 0;
+}
+
+.sub-sections {
+          padding-left: 20px;
+}
+
+ul .sub-sections {
+          margin-left: 20px;
+}
+
+.table-of-contents {
+          border: 1px solid white;
+          padding: 10px;
+          margin: 20px 0;
+}
