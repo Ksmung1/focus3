@@ -80,7 +80,7 @@ function Body() {
               letterSpacing: "3px",
             }}
           >
-            all or nothing
+            launch your future
           </p>
 
           <div className="search-bar-container">
