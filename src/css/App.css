@@ -648,3 +648,21 @@ img.focus-link {
   top: 160px;
   width: 70px;
 }
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  background: #fe5a1d;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  text-align: center;
+}
+.notification p:nth-child(1) {
+  padding-bottom: 10px;
+}

@@ -55,6 +55,7 @@ function Body() {
         </>
       ) : (
         <>
+        
           <img
             src={`${process.env.PUBLIC_URL}/images/target.gif`}
             alt="target"
@@ -75,12 +76,12 @@ function Body() {
           <p
             style={{
               color: "white",
-              margin: "0 0 30px 0 ",
+              margin: "10px 0 30px 0 ",
               fontWeight: 10,
               letterSpacing: "3px",
             }}
           >
-            launch your future
+            The leading force in Class X & XII. NEET, NDA, CDS, & CAPF Coaching
           </p>
 
           <div className="search-bar-container">
@@ -105,6 +106,7 @@ function Body() {
               </div>
             </div>
           </div>
+      
 
           <PhotoGallery />
           <ArticleCalendar />
@@ -119,7 +121,7 @@ function Body() {
               <p class="loading"><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span></p>
               </div>
 
-              <DeepFocus />
+              {/* <DeepFocus /> */}
             <div className="educafe-link" style={{}}>
             <div className="info">
               <img src={`${process.env.PUBLIC_URL}/images/coffee-cup.gif`} alt="" />
