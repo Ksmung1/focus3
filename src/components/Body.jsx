@@ -112,14 +112,14 @@ function Body() {
           <ArticleCalendar />
           
           <div className=" deep-link">
-            <div className="info">
+            {/* <div className="info">
               <img style={{width: '80px'}} src={`${process.env.PUBLIC_URL}/images/deep-focus.png`} alt="" />
               <h1 style={{fontSize:'1.8rem'}}>PROJECT DEEP FOCUS</h1>
               <p onClick={() => (window.location.href = "https://edu-cafe.netlify.app/")}>
                 Launching soon
               </p>
               <p class="loading"><span>.</span><span>.</span><span>.</span><span>.</span><span>.</span></p>
-              </div>
+              </div> */}
 
               {/* <DeepFocus /> */}
             <div className="educafe-link" style={{}}>
