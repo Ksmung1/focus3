@@ -6,7 +6,6 @@ import Navbar from "./Navbar";
 import Body from "./Body"
 import FOUR_OU_FOUR from './FOUR_OU_FOUR';
 import Exams from "./Exams";
-// import Advertisement from "./Advertisement";
 import CurrentAffairs from './CurrentAffairs/CurrentAffairs';
 import CurrentMonthAffairs from './CurrentAffairs/CurrentMonthAffairs';
 import Magazines from './Magazines/Magazines';
@@ -55,10 +54,7 @@ function App() {
                     <Routes>
                     <Route path="*" element={<FOUR_OU_FOUR />} />
         <Route path="/physics" element={<FOUR_OU_FOUR />} />
-        <Route path="/" element={<><Navbar />    <div className="notification">
-          <p><strong>Important Announcement!</strong></p>
-                    <p>Registration for New Batch is Starting Soon.<br/> Stay Tuned for Updates!</p>
-                  </div><Body/></>} />
+        <Route path="/" element={<><Navbar /><Body/></>} />
         
         <Route path='/type' element={<><Typewriter></Typewriter></>}></Route>
         <Route path="/exams" element={<Exams />} />

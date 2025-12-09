@@ -19,21 +19,18 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
-.explore-topics .item p {
-}
+
 .explore-topics .item a {
   color: white;
   text-decoration: none;
 }
-.explore-topics .item a:hover {
-}
+
 .explore-topics .item a:visited {
   color: white;
   background-color: #f0f0f0;
 }
 
 .scroll-container {
-  background: ;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -237,8 +234,7 @@ body {
   margin: 0 0 -10px 0;
   padding: 10px;
 }
-.educafe-link {
-}
+
 .deep-link {
   color: white;
   margin: 20px;
@@ -296,7 +292,7 @@ p {
   color: white;
   background: inherit;
 }
-..bar {
+.bar {
   color: black;
 }
 .toggle-button {
@@ -385,12 +381,17 @@ p {
 }
 .photoalbum .col ul {
   margin: 5px 0 0;
-  text-aling: left;
+  text-align: left;
   padding-left: 10px;
 }
 .photoalbum .col ul li {
   font-size: 10px;
   text-align: left;
+}
+
+.adver {
+  width: 100%;
+  height: 100%;
 }
 /* .photoalbum .col ul li:before {
   content: "⚪";
@@ -665,4 +666,11 @@ img.focus-link {
 }
 .notification p:nth-child(1) {
   padding-bottom: 10px;
+}
+
+img.adv-image {
+  width: 100%;
+  height: 100%;
+  margin: 20px 0;
+  padding: 5px;
 }

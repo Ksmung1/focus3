@@ -15,6 +15,35 @@ function Body() {
   //eslint-disable-next-line
   const [clickCount, setClickCount] = useState(0);
 
+    const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const targetDate = new Date("2025-12-18T00:00:00");
+
+    const timer = setInterval(() => {
+      const now = new Date();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        clearInterval(timer);
+        return;
+      }
+
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((difference / 1000 / 60) % 60);
+      const seconds = Math.floor((difference / 1000) % 60);
+
+      setTimeLeft({ days, hours, minutes, seconds });
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
   // Effect to show Typewriter first, then main content after 6 seconds
   useEffect(() => {
     const hasSeenTypewriter = sessionStorage.getItem("hasSeenTypewriter");
@@ -84,10 +113,109 @@ function Body() {
             The leading force in Class X & XII. NEET, NDA, CDS, & CAPF Coaching
           </p>
 
+
           <div className="search-bar-container">
             <SearchBar setResults={setResults} />
             <SearchResults results={results} />
           </div>
+
+          
+          <section className="" style={{padding: "50px 0"}}>
+            <div className="available-course adver max-w-7xl mx-auto px-4 md:px-10 lg:px-20">
+              <h1 style={{fontSize: "1.9rem"}}>New Updates</h1>
+              <img className="w-full adv-image h-full" src={`${process.env.PUBLIC_URL}/images/adver.jpg`} alt="" />
+                        <div>
+<h2
+  style={{
+    fontWeight: 600, // font-semibold
+    lineHeight: 1.625, // leading-relaxed
+    fontSize: "1.1rem", // text-md
+    color: "#eceff4ff", // text-gray-900
+    marginTop: "0.75rem", // mt-3
+  }}
+>
+  🚀 40 focused days. One final push. One powerful result.
+</h2>
+
+            
+            {/* Countdown UI */}
+<div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
+  <div
+    style={{
+      marginTop: "1rem",
+      padding: "0.75rem",
+      width: "100%",
+      maxWidth: "24rem",
+      marginLeft: "auto",
+      marginRight: "auto",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      backgroundColor: "#f3f4f6", // gray-100
+      borderRadius: "0.5rem",
+    }}
+  >
+    <h3
+      style={{
+        fontWeight: 600,
+        textAlign: "center",
+        color: "#111827", // gray-900
+        marginBottom: "0.25rem",
+      }}
+    >
+      ⏳ Countdown to December 18:
+    </h3>
+
+    <div
+      style={{
+        display: "flex",
+        gap: "0.75rem",
+        justifyContent: "center",
+        textAlign: "center",
+      }}
+    >
+      <div>
+        <span style={{ fontWeight: 700, fontSize: "1.25rem" }}>
+          {timeLeft.days}
+        </span>
+        <p style={{ fontSize: "0.75rem", color: "#4b5563" /* gray-600 */ }}>
+          Days
+        </p>
+      </div>
+
+      <div>
+        <span style={{ fontWeight: 700, fontSize: "1.25rem" }}>
+          {timeLeft.hours}
+        </span>
+        <p style={{ fontSize: "0.75rem", color: "#4b5563" }}>
+          Hours
+        </p>
+      </div>
+
+      <div>
+        <span style={{ fontWeight: 700, fontSize: "1.25rem" }}>
+          {timeLeft.minutes}
+        </span>
+        <p style={{ fontSize: "0.75rem", color: "#4b5563" }}>
+          Minutes
+        </p>
+      </div>
+
+      <div>
+        <span style={{ fontWeight: 700, fontSize: "1.25rem" }}>
+          {timeLeft.seconds}
+        </span>
+        <p style={{ fontSize: "0.75rem", color: "#4b5563" }}>
+          Seconds
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+          </div>
+            </div>
+          </section>
 
           <div className="available-course">
             <h1>AVAILABLE COURSES</h1>
@@ -109,7 +237,7 @@ function Body() {
       
 
           <PhotoGallery />
-          <ArticleCalendar />
+          {/* <ArticleCalendar /> */}
           
           <div className=" deep-link">
             {/* <div className="info">
