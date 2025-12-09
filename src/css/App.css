@@ -2,9 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background: #1f1f1f;
+  background: white;
   color: white;
 }
+
 .explore-topics {
   padding: 10px;
   margin: 30px;
@@ -83,7 +84,7 @@ body {
   font-size: 1.5rem;
   font-weight: 800;
   margin-bottom: 0px;
-  color: red;
+  color: #FF001F;
 }
 
 /* Flex container for course options */
@@ -104,7 +105,7 @@ body {
   padding: 7px 5px;
   border: 2px solid #000;
   cursor: pointer;
-  background-color: #000;
+  background-color: #00116B;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
@@ -112,7 +113,7 @@ body {
 /* Neon glow effect for ongoing */
 .course-options .item.ongoing {
   /* animation: neon-green-border 2s linear infinite; */
-  background: black;
+  background: #00116B;
   color: white;
   font-size: 11px;
   border: 1px solid white;
@@ -230,7 +231,7 @@ body {
 }
 
 .contacts h5 {
-  background: red;
+  background: #FF001F;
   margin: 0 0 -10px 0;
   padding: 10px;
 }
@@ -243,7 +244,7 @@ body {
 .deep-link .info {
   background-color: black;
   border: 1px solid white;
-  /* box-shadow: 0 0 10px red, 0 0 20px rgb(182, 68, 27); */
+  /* box-shadow: 0 0 10px #FF001F, 0 0 20px rgb(182, 68, 27); */
   padding: 20px 20px 10px;
   max-width: 600px;
   color: white;
@@ -371,7 +372,7 @@ p {
 .photoalbum .col {
   border: 1px solid white;
   padding: 10px;
-  background: #000;
+  background: #00116B;
   height: 145px;
   width: 100%;
 }
@@ -477,7 +478,7 @@ p {
 
 .type-effect {
   height: 100vh;
-  background: #1f1f1f;
+  background: white;
   z-index: 100;
   position: relative;
   top: -200px;
@@ -490,7 +491,7 @@ p {
   justify-content: center;
   margin: 100px 30px;
   padding: 100px 40px;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 .postContent {
   padding: 5px;
@@ -512,7 +513,7 @@ h2 {
   font-weight: bold;
   font-family: Arial, sans-serif;
   text-align: center;
-  color: red;
+  color: #FF001F;
   padding: 0;
 }
 
@@ -558,7 +559,7 @@ h2 {
 .deepfocus h1,
 h2 {
   font-size: 1.4rem;
-  color: red;
+  color: #FF001F;
   margin: 7px 0;
   padding: 0;
 }
@@ -654,7 +655,7 @@ img.focus-link {
   align-items: center;
   padding: 10px;
   justify-content: center;
-  background: red;
+  background: #FF001F;
   color: white;
   position: absolute;
   top: 0;

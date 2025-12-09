@@ -3,9 +3,8 @@ import Typewriter from "typewriter-effect";
 
 const TypingEffect = () => {
   const sentences = [
-    "Turn your preparation into a predictable system for success.",
-    "Learn efficient methods, smart strategies, and productivity habits that truly work.",
-    "FOCUS helps you PLAN wisely, LEARN effectively, and PERFORM exceptionally.",
+    "Turn your preparation into a predictable system for success.",
+    "FOCUS helps you PLAN wisely, LEARN effectively, and PERFORM exceptionally.",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,17 +26,17 @@ const TypingEffect = () => {
       document.body.style.overflow = "auto";
       clearTimeout(timer);
     };
-  }, [currentIndex, sentences.length]);
+  }, [currentIndex]);
 
   return (
     <div className="type-effect">
-      <p className="courier-prime" style={{ color: "white" }}>
+      <p className="courier-prime" style={{ color: "black" }}>
         <Typewriter
           options={{
             strings: [sentences[currentIndex]],
             autoStart: true,
             loop: false,
-            delay: 20,
+            delay: 25,
             cursor: "|",
           }}
         />

@@ -51,7 +51,7 @@ function Body() {
       const timer = setTimeout(() => {
         setActive(true);
         sessionStorage.setItem("hasSeenTypewriter", "true");
-      }, 9000);
+      }, 6300);
   
       return () => clearTimeout(timer);
     } else {
@@ -85,7 +85,7 @@ function Body() {
         <>
         
           <img
-            src={`${process.env.PUBLIC_URL}/images/logo.png`}
+            src={`${process.env.PUBLIC_URL}/images/logo2.jpg`}
             alt="target"
             style={{ margin: "80px 0 0 0", cursor: "pointer", width: '100px' }}
             onClick={handleImageClick}
@@ -96,24 +96,24 @@ function Body() {
               fontWeight: "800",
               marginTop: "10px",
               marginBottom: "0",
-              color: "red",
+              color: "#FF001F",
             }}
           >
             FOCUS
           </h1>
           <p
             style={{
-              color: "white",
+              color: "black",
               margin: "10px 0 30px 0 ",
               fontWeight: 10,
-              letterSpacing: "3px",
+              letterSpacing: "2px",
             }}
           >
-            The leading force in Class X & XII. NEET, NDA, CDS, & CAPF Coaching
+          Where Tomorrow’s Achievers Train Today.          
           </p>
 
 
-          <div className="search-bar-container">
+          <div className="search-bar-container" style={{border: "1px solid black"}}>
             <SearchBar setResults={setResults} />
             <SearchResults results={results} />
           </div>
@@ -122,15 +122,14 @@ function Body() {
           <section className="" style={{padding: "50px 0"}}>
             <div className="available-course adver max-w-7xl mx-auto px-4 md:px-10 lg:px-20">
               <h1 style={{fontSize: "1.9rem"}}>New Update</h1>
-              <img className="w-full adv-image h-full" src={`${process.env.PUBLIC_URL}/images/adver.jpg`} alt="" />
+              <img style={{padding: "20px 20px 0"}} className="w-full adv-image h-full" src={`${process.env.PUBLIC_URL}/images/adver.jpg`} alt="" />
                         <div>
 <h2
   style={{
     fontWeight: 600, // font-semibold
     lineHeight: 1.625, // leading-relaxed
-    fontSize: "1.1rem", // text-md
-    color: "#eceff4ff", // text-gray-900
-    marginTop: "0.75rem", // mt-3
+    fontSize: "0.9rem", // text-md
+    color: "#000", // text-gray-900
   }}
 >
   🚀 40 focused days. One final push. One powerful result.
@@ -252,8 +251,8 @@ function Body() {
             <div className="educafe-link" style={{}}>
             <div className="info">
               <img src={`${process.env.PUBLIC_URL}/images/coffee-cup.gif`} alt="" />
-              <h1>EDUCAFE</h1>
-              <p onClick={() => (window.location.href = "https://edu-cafe.netlify.app/")}>
+              <h1 style={{color: "black"}}>EDUCAFE</h1>
+              <p style={{color: "black"}} onClick={() => (window.location.href = "https://edu-cafe.netlify.app/")}>
                 Home is where love surrounds you — but so do distractions. Family chats, neighbors visiting, and friends calling can break your focus. That’s why we built{" "}
                 <strong>EDUCAFE</strong> — a peaceful space where your goals get the attention they deserve.
               </p>
@@ -263,7 +262,7 @@ function Body() {
           </div>
           <div style={{ margin: "70px 20px" }}>
           <img
-              style={{ width: "100%", border: "1px solid red" }}
+              style={{ width: "100%", border: "1px solid #FF001F" }}
               src="/images/WhatsApp Image 2025-01-21 at 23.19.31_41e6be10.jpg"
               alt=""
             />
@@ -283,10 +282,10 @@ function Body() {
                 <img src="./images/whatsapp.png" alt="dimond" />
               </a>
             </p>
-            <h1 style={{ marginBottom: "30px", fontSize: "16px", color: "white" }}>
+            <h1 style={{ marginBottom: "30px", fontSize: "16px", color: "black" }}>
               Made with ❤️ by Nextjourney
             </h1>
-            <h5 style={{ background: "red", margin: " 0 0 -10px 0", padding: "10px" }}>
+            <h5 style={{ background: "#FF001F", margin: " 0 0 -10px 0", padding: "10px" }}>
               Copyright © Focus
             </h5>
           </div>
