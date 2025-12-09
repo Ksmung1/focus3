@@ -26,7 +26,7 @@ const TypingEffect = () => {
       document.body.style.overflow = "auto";
       clearTimeout(timer);
     };
-  }, [currentIndex]);
+  }, [currentIndex, sentences.length]);
 
   return (
     <div className="type-effect">
