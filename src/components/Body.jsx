@@ -85,9 +85,9 @@ function Body() {
         <>
         
           <img
-            src={`${process.env.PUBLIC_URL}/images/logo.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/logo.png`}
             alt="target"
-            style={{ margin: "80px 0 0 0", cursor: "pointer" }}
+            style={{ margin: "80px 0 0 0", cursor: "pointer", width: '100px' }}
             onClick={handleImageClick}
           />
           <h1
@@ -96,7 +96,7 @@ function Body() {
               fontWeight: "800",
               marginTop: "10px",
               marginBottom: "0",
-              color: "#fe5a1d",
+              color: "red",
             }}
           >
             FOCUS
@@ -286,7 +286,7 @@ function Body() {
             <h1 style={{ marginBottom: "30px", fontSize: "16px", color: "white" }}>
               Made with ❤️ by Nextjourney
             </h1>
-            <h5 style={{ background: "#fe5a1d", margin: " 0 0 -10px 0", padding: "10px" }}>
+            <h5 style={{ background: "red", margin: " 0 0 -10px 0", padding: "10px" }}>
               Copyright © Focus
             </h5>
           </div>
