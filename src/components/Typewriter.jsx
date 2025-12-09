@@ -1,53 +1,46 @@
-import React, { useState, useEffect } from 'react';
-import Typewriter from 'typewriter-effect';
+import React, { useState, useEffect } from "react";
+import Typewriter from "typewriter-effect";
 
 const TypingEffect = () => {
-  const [showSecondText, setShowSecondText] = useState(false);
+  const sentences = [
+    "Turn your preparation into a predictable system for success.",
+    "Learn efficient methods, smart strategies, and productivity habits that truly work.",
+    "FOCUS helps you PLAN wisely, LEARN effectively, and PERFORM exceptionally.",
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    // Disable scrolling when the component is mounted
-    document.body.style.overflow = 'hidden';
+    // Disable scrolling
+    document.body.style.overflow = "hidden";
 
-    // Set a timer to switch to the second paragraph after the first completes
-    const timer = setTimeout(() => {
-      setShowSecondText(true);
-    }, 3000); // Adjust time based on typewriter speed
+    let timer;
 
-    // Cleanup function to re-enable scrolling when component unmounts
+    if (currentIndex < sentences.length - 1) {
+      // Change to next sentence after some time
+      timer = setTimeout(() => {
+        setCurrentIndex((prev) => prev + 1);
+      }, 3000); // Adjust based on typing speed
+    }
+
     return () => {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = "auto";
       clearTimeout(timer);
     };
-  }, []);
+  }, [currentIndex]);
 
   return (
     <div className="type-effect">
-      <p className="courier-prime" style={{ color: 'white' }}>
-        {showSecondText ? (
-          <Typewriter
-            options={{
-              strings: [
-                `At FOCUS, we help you PLAN, LEARN and ACCOMPLISH More in less time.`
-              ],
-              autoStart: true,
-              loop: false,
-              delay: 20,
-              cursor: '|'
-            }}
-          />
-        ) : (
-          <Typewriter
-            options={{
-              strings: [
-                `Systematize your exam preparations, Learn new tips and tricks and Boost your productivity.`
-              ],
-              autoStart: true,
-              loop: false,
-              delay: 15,
-              cursor: '|'
-            }}
-          />
-        )}
+      <p className="courier-prime" style={{ color: "white" }}>
+        <Typewriter
+          options={{
+            strings: [sentences[currentIndex]],
+            autoStart: true,
+            loop: false,
+            delay: 20,
+            cursor: "|",
+          }}
+        />
       </p>
     </div>
   );

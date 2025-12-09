@@ -85,7 +85,7 @@ function Body() {
         <>
         
           <img
-            src={`${process.env.PUBLIC_URL}/images/target.gif`}
+            src={`${process.env.PUBLIC_URL}/images/logo.jpg`}
             alt="target"
             style={{ margin: "80px 0 0 0", cursor: "pointer" }}
             onClick={handleImageClick}
