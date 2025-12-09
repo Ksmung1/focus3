@@ -6,7 +6,6 @@ import PhotoGallery from "./PhotoGallery";
 import Slider from "./Slider";
 import Founder from "./Founder";
 import Typewriter from "./Typewriter";
-import ArticleCalendar from "./ArticleCalendar";
 // import DeepFocus from "./DeepFocus";
 function Body() {
   const navigate = useNavigate();
