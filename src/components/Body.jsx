@@ -51,7 +51,7 @@ function Body() {
       const timer = setTimeout(() => {
         setActive(true);
         sessionStorage.setItem("hasSeenTypewriter", "true");
-      }, 6000);
+      }, 9000);
   
       return () => clearTimeout(timer);
     } else {
