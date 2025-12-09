@@ -121,7 +121,7 @@ function Body() {
           
           <section className="" style={{padding: "50px 0"}}>
             <div className="available-course adver max-w-7xl mx-auto px-4 md:px-10 lg:px-20">
-              <h1 style={{fontSize: "1.9rem"}}>New Updates</h1>
+              <h1 style={{fontSize: "1.9rem"}}>New Update</h1>
               <img className="w-full adv-image h-full" src={`${process.env.PUBLIC_URL}/images/adver.jpg`} alt="" />
                         <div>
 <h2
