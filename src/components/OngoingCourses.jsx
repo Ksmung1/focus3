@@ -17,6 +17,10 @@ const OngoingCourses = () => {
                       <div className="col indie-flower">Class X Masterclass 2025
                     <span className='status-badge completed-badge'>Completed</span>
           </div>
+          <div style={{display: "flex", flexDirection: "column", gap: "10px", marginTop: "16px"}}>
+            <img style={{width: "100%"}} src={`${process.env.PUBLIC_URL}/images/competency.jpg`} alt="" />
+            <img style={{width: '100%'}} src={`${process.env.PUBLIC_URL}/images/omr.jpg`} alt="" />
+          </div>
 
         </div>
         </>
